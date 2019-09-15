@@ -38,14 +38,4 @@ main {
 .spot-lead {
   font-size: 16px;
 }
-
-.spot-figure-image {
-  margin: 30px 0;
-  object-fit: contain;
-  max-height: 40vh;
-}
-
-.spot-figure-caption {
-  color: #6c757d;
-}
 </style>

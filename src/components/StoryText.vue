@@ -9,7 +9,7 @@
     <ul class="spot-list">
       <li class="spot-list-item" v-for="spot in spots" v-bind:key="spot.id">
         <router-link v-bind:to="{ name : 'spot', params : { id: spot.id }}">
-          <SpotContent v-bind:spot=spot></SpotContent>
+          <SpotContent class="collection" v-bind:spot=spot></SpotContent>
         </router-link>
       </li>
     </ul>
