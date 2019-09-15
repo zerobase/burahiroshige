@@ -40,4 +40,9 @@ export default {
 main {
   margin: 10px;
 }
+
+.story-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
 </style>

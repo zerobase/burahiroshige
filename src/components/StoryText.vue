@@ -27,11 +27,6 @@ export default {
 </script>
 
 <style scoped>
-.story-title {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
 .story-figure-image {
   margin: 10px 0;
   height: 200px;
