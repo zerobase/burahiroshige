@@ -1,14 +1,13 @@
 import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue' // added
 import Router from 'vue-router'
-import 'bootstrap/dist/css/bootstrap.css' // added
-import 'bootstrap-vue/dist/bootstrap-vue.css' // added
 import stories from '@/components/stories'
 import story from '@/components/story'
 import storyText from '@/components/story-text'
 import storyMap from '@/components/story-map'
 import spot from '@/components/spot'
 import { ImagePlugin, TabsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(Router)
 Vue.use(ImagePlugin)
