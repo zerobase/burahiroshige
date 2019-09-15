@@ -13,12 +13,10 @@
 </template>
 
 <script>
-import dataset from '../dataset'
-
 export default {
   data () {
     return {
-      stories: dataset.stories
+      stories: this.$dataset.stories
     }
   }
 }

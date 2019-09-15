@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import dataset from '../dataset'
 import SpotContent from '@/components/SpotContent'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
@@ -21,18 +20,21 @@ L.Icon.Default.mergeOptions({
 })
 
 export default {
+  props: {
+    id: Number
+  },
   components: {
     SpotContent
   },
   data () {
-    var spot = dataset.spots[this.$route.params.id]
+    var spot = this.$dataset.spots[this.$route.params.id]
     return {
       spot: spot,
-      story: dataset.stories[spot.storyID]
+      story: this.$dataset.stories[spot.storyID]
     }
   },
   mounted () {
-    var spot = dataset.spots[this.$route.params.id]
+    var spot = this.$dataset.spots[this.$route.params.id]
     if (spot.position) {
       const pos = L.latLng(spot.position[0], spot.position[1])
       L.map(

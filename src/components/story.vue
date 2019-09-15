@@ -12,21 +12,22 @@
 </template>
 
 <script>
-import dataset from '../dataset'
 import _ from 'lodash'
 
 import StoryText from '@/components/StoryText'
 import StoryMap from '@/components/StoryMap'
 
 export default {
+  props: {
+    id: Number
+  },
   components: {
     StoryText,
     StoryMap
   },
   data () {
-    var storyID = this.$route.params.id
-    var story = dataset.stories[storyID]
-    var spots = _.filter(dataset.spots, (spot) => spot.storyID === storyID)
+    var story = this.$dataset.stories[this.$props.id]
+    var spots = _.filter(this.$dataset.spots, (spot) => spot.storyID === this.$props.id)
     return {
       story: story,
       spots: spots
