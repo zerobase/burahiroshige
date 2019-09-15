@@ -3,7 +3,7 @@
     <nav class="spot-story-title"><router-link v-bind:to="{ name : 'story', params : { id: story.id }}">{{ story.title }}</router-link></nav>
     <h1 class="spot-title">{{ spot.title }}</h1>
     <p class="spot-lead">{{ spot.lead }}</p>
-    <figure class="spot-figure">
+    <figure class="spot-figure" v-if="spot.image">
       <b-img class="spot-figure-image" v-bind:src=spot.image fluid alt="スポット画像"></b-img>
       <figcaption class="spot-figure-caption">{{ spot.imageCaption }} <small>(Credit: {{ spot.imageCredit }})</small></figcaption>
     </figure>

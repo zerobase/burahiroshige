@@ -9,10 +9,11 @@
     <ul class="spot-list">
       <li class="spot-list-item" v-for="spot in spots" v-bind:key="spot.id">
         <router-link v-bind:to="{ name : 'spot', params : { id: spot.id }}">
-          <b-img class="spot-thumbnail" thumbnail v-bind:src=spot.image alt=""></b-img>
+          <b-img v-if="spot.image" class="spot-thumbnail" thumbnail v-bind:src=spot.image alt=""></b-img>
           <p class="spot-title">{{ spot.title }}</p>
           <p class="spot-lead">{{ spot.lead }}</p>
         </router-link>
+        <p class="spot-description">{{ spot.description }}</p>
       </li>
     </ul>
   </div>
@@ -62,5 +63,8 @@ export default {
 
 .spot-lead {
   font-size: 13px;
+}
+
+.spot-description {
 }
 </style>
