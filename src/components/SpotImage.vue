@@ -1,7 +1,9 @@
 <template>
   <div class="spot-image">
     <figure class="spot-figure" v-if="image">
-      <b-img class="spot-figure-image" v-bind:src=image.url fluid-grow alt="スポット画像"></b-img>
+      <a v-bind:href=image.url>
+        <b-img class="spot-figure-image" v-bind:src=image.url fluid-grow alt="スポット画像"></b-img>
+      </a>
       <figcaption v-if="image.caption" class="spot-figure-caption">
           {{ image.caption }}
           <small v-if="image.credit">(Credit: {{ image.credit }})</small>
@@ -37,12 +39,12 @@ export default {
 .spot-figure-image {
   margin: 30px 0;
   object-fit: contain;
-  max-height: 200vh;
+  max-height: 80vh;
 }
 
 .spot-content.collection .spot-figure-image {
   object-fit: contain;
-  max-height: 70vh;
+  max-height: 50vh;
 }
 
 .spot-figure-caption {
