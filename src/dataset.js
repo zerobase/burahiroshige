@@ -54,32 +54,28 @@ const _spots = {
     id: 3,
     title: '魚河岸',
     lead: '魚河岸で売られている魚',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
-    description: '｢魚河岸といえば魚よね｣｢魚かぁ…今の季節ならうなぎとか？｣｢昨日の夕餉、うなぎだったわね｣｢うらやましいー昨日の夕餉は鯉よ｣｢鯉もおいしいじゃない｣'
+    description: '｢魚河岸といえば魚よね｣｢魚かぁ…今の季節ならうなぎとか？｣｢昨日の夕餉、うなぎだったわね｣｢うらやましいー昨日の夕餉は鯉よ｣｢鯉もおいしいじゃない｣',
+    image: {
+      type: 'raw', // raw, iiif
+      url: 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Yoshitoshi_The_Giant_Carp.jpg'
+    }
   },
   4: {
     storyID: 1,
     id: 4,
     title: '越後屋',
     lead: 'かんざし',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
-    description: '｢越後屋による前に新しいかんざしがほしいから見ていっていきたいのよね｣｢いいわよ、時間まだあるし｣ ｢このかんざし、べっこうでかわいい｣｢値段もそんなに高くないし買っちゃえば？｣｢こっちのも漆でかわいい、こっちも…うーん…どっちがいいと思う？｣｢漆かなぁ｣｢じゃあこれください｣'
+    description: '｢越後屋による前に新しいかんざしがほしいから見ていっていきたいのよね｣｢いいわよ、時間まだあるし｣ ｢このかんざし、べっこうでかわいい｣｢値段もそんなに高くないし買っちゃえば？｣｢こっちのも漆でかわいい、こっちも…うーん…どっちがいいと思う？｣｢漆かなぁ｣｢じゃあこれください｣',
+    image: {
+      type: 'raw', // raw, iiif
+      url: 'https://colbase.nich.go.jp/uploads/collection_item_images/thumbnail/0d47a54bc0dbfead39b888bccf3c779d.jpg'
+    }
   },
   5: {
     storyID: 1,
     id: 5,
     title: '越後屋',
     lead: '流行りの着物',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
     description: '｢いらっしゃい、今日はどんなのをお探しで｣｢そろそろ冬ものの袷がほしいんだけど、冬にオススメのものはどれ？｣｢冬用なら水仙とか、あとこの縞とかどうですかね｣｢もう少し明るい色がいいわね｣｢雪模様のこれはどうです？｣｢うーん、ふみ、これどう？｣｢似合うんじゃない？｣｢柄が大きすぎない？｣｢おたきの顔なら似合うわよ｣'
   },
   6: {
@@ -87,92 +83,51 @@ const _spots = {
     id: 6,
     title: '越後屋',
     lead: '江戸の美人',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
-    description: '｢あーあ、あたしが高嶋屋おひさみたいな絶世の美人だったらこんなに迷わないのに｣｢これだけ着物があると悩むし仕方ないわよ｣｢ふみは気に入ったのないの？｣｢あたしはこの羽織を買うつもり｣｢橙でかわいいわね｣｢でしょう？｣'
+    description: '｢あーあ、あたしが高嶋屋おひさみたいな絶世の美人だったらこんなに迷わないのに｣｢これだけ着物があると悩むし仕方ないわよ｣｢ふみは気に入ったのないの？｣｢あたしはこの羽織を買うつもり｣｢橙でかわいいわね｣｢でしょう？｣',
+    image: {
+      type: 'raw', // raw, iiif
+      url: 'https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/zuroku/Z0168/Z0168-483.jpg'
+    }
   },
   7: {
     storyID: 1,
     id: 7,
     title: '中村座',
     lead: '歌舞伎の演目',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
-    description: '｢日本橋といえば越後屋と中村座よね｣｢今日の演目はなんだっけ？｣｢本朝廿四孝って書いてあるわ｣｢八重垣姫が一途で素敵な演目かぁ｣｢あんな恋愛してみたいよね｣｢どうせ恋人にするなら助六みたいな素敵な人がいいなぁ｣'
+    description: '｢日本橋といえば越後屋と中村座よね｣｢今日の演目はなんだっけ？｣｢本朝廿四孝って書いてあるわ｣｢八重垣姫が一途で素敵な演目かぁ｣｢あんな恋愛してみたいよね｣｢どうせ恋人にするなら助六みたいな素敵な人がいいなぁ｣',
+    image: {
+      type: 'raw', // raw, iiif
+      url: 'http://mfas3.s3.amazonaws.com/objects/SC127498.jpg'
+    }
   },
   8: {
     storyID: 1,
     id: 8,
     title: '中村座',
     lead: 'イケメン役者',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
-    description: '｢助六といえば市川團十郎の助六を見てみたいの｣｢豊国の役者絵かっこいいもんね｣｢豊国のもいいけど国貞のもかっこいいのよ、見たことある？｣｢ええ、もちろん！昔の役者だけど三代目市川八百蔵のも絵もかっこよくてオススメよ｣'
+    description: '｢助六といえば市川團十郎の助六を見てみたいの｣｢豊国の役者絵かっこいいもんね｣｢豊国のもいいけど国貞のもかっこいいのよ、見たことある？｣｢ええ、もちろん！昔の役者だけど三代目市川八百蔵のも絵もかっこよくてオススメよ｣',
+    image: {
+      type: 'raw', // raw, iiif
+      url: 'https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/kunitachi/80/80-1077.jpg'
+    }
   },
   9: {
     storyID: 1,
     id: 9,
     title: '食事',
     lead: '寿司',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
-    description: '｢観劇したらお腹すいちゃった｣｢なにか食べる？｣｢このあたりならなんでもあるから目移りしちゃう｣｢お寿司に天ぷら、あとそばとうなぎのどれかかな｣｢帰りに千疋屋で果物買って帰りましょ｣｢いいわね、きっと家族も喜ぶわ｣｢じゃあ今日は天ぷらの気分だから、天ぷら食べて帰りましょう｣｢そうね、キスの天ぷらが食べたいなぁ｣'
+    description: '｢観劇したらお腹すいちゃった｣｢なにか食べる？｣｢このあたりならなんでもあるから目移りしちゃう｣｢お寿司に天ぷら、あとそばとうなぎのどれかかな｣｢帰りに千疋屋で果物買って帰りましょ｣｢いいわね、きっと家族も喜ぶわ｣｢じゃあ今日は天ぷらの気分だから、天ぷら食べて帰りましょう｣｢そうね、キスの天ぷらが食べたいなぁ｣',
+    image: {
+      type: 'raw', // raw, iiif
+      url: 'http://www9.nhk.or.jp/das/image/D0004500/D0004500414_00000_S_001.jpg'
+    }
   },
   10: {
     storyID: 1,
     id: 11,
     title: '街のこと',
-    lead: '',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
     description: '｢今日は楽しかったね｣｢色々見たし買ったし、楽しかったよ｣｢日本橋を満喫した！って感じね｣｢うんうん。また一緒に遊びに来よう！｣｢もちろん！｣'
   }
-  /*,
-  : {
-    storyID: 1,
-    id: ,
-    title: '',
-    lead: '',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
-    description: ''
-  }
-  */
-  /*,
-  3: {
-    storyID: 2,
-    id: 3,
-    title: '日本橋三越本店',
-    lead: '実は云々かんぬん……',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Mitsukoshi_Nihonbashi_main_store_4.jpg/800px-Mitsukoshi_Nihonbashi_main_store_4.jpg',
-    imageCaption: '日本橋三越本店（国の重要文化財:2018年撮影）',
-    imageCredit: 'Kakidai [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)]',
-    location: null,
-    description: '商号の「三越」は、三井家の「三井」と創業時の「越後屋」からとったもので、1904年に「合名会社三井呉服店」から「株式会社三越呉服店」へ改称した際からのものである。1935年に竣工した日本橋本店は、国の重要文化財に指定されている[1][2]。現在の同店のキャッチフレーズは、「飾る日も 飾らない日も 三越と」、「This is Japan」。(Wikipedia)'
-  },
-  4: {
-    storyID: 2,
-    id: 4,
-    title: '日本橋三越本店',
-    lead: '実は云々かんぬん……',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Mitsukoshi_Nihonbashi_main_store_4.jpg/800px-Mitsukoshi_Nihonbashi_main_store_4.jpg',
-    imageCaption: '日本橋三越本店（国の重要文化財:2018年撮影）',
-    imageCredit: 'Kakidai [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)]',
-    location: null,
-    description: '商号の「三越」は、三井家の「三井」と創業時の「越後屋」からとったもので、1904年に「合名会社三井呉服店」から「株式会社三越呉服店」へ改称した際からのものである。1935年に竣工した日本橋本店は、国の重要文化財に指定されている[1][2]。現在の同店のキャッチフレーズは、「飾る日も 飾らない日も 三越と」、「This is Japan」。(Wikipedia)'
-  }*/
 }
 
 export default {
