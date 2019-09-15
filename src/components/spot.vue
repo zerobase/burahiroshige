@@ -1,13 +1,18 @@
 <template>
   <main>
     <nav class="spot-story-title"><router-link v-bind:to="{ name : 'story', params : { id: story.id }}">{{ story.title }}</router-link></nav>
-    <SpotContent class="single" v-bind:spot=spot></SpotContent>
+    <div class="spot-content single">
+      <h1 class="spot-title">{{ spot.title }}</h1>
+      <p class="spot-lead">{{ spot.lead }}</p>
+      <SpotImage v-bind:image="spot.image"></SpotImage>
+      <p class="spot-description">{{ spot.description }}</p>
+    </div>
     <SpotMap></SpotMap>
   </main>
 </template>
 
 <script>
-import SpotContent from '@/components/SpotContent'
+import SpotImage from '@/components/SpotImage'
 import SpotMap from '@/components/SpotMap'
 
 export default {
@@ -15,7 +20,7 @@ export default {
     id: Number
   },
   components: {
-    SpotContent,
+    SpotImage,
     SpotMap
   },
   data () {

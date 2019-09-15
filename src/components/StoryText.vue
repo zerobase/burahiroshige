@@ -9,7 +9,12 @@
     <ul class="spot-list">
       <li class="spot-list-item" v-for="spot in spots" v-bind:key="spot.id">
         <router-link v-bind:to="{ name : 'spot', params : { id: spot.id }}">
-          <SpotContent class="collection" v-bind:spot=spot></SpotContent>
+          <div class="spot-content collection">
+            <h1 class="spot-title">{{ spot.title }}</h1>
+            <p class="spot-lead">{{ spot.lead }}</p>
+            <SpotImage v-bind:image="spot.image"></SpotImage>
+            <p class="spot-description">{{ spot.description }}</p>
+          </div>
         </router-link>
       </li>
     </ul>
@@ -17,11 +22,11 @@
 </template>
 
 <script>
-import SpotContent from '@/components/SpotContent'
+import SpotImage from '@/components/SpotImage'
 
 export default {
   components: {
-    SpotContent
+    SpotImage
   },
   props: {
     'story': Object,
@@ -60,13 +65,10 @@ export default {
 .spot-title {
   padding-top: 10px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .spot-lead {
-  font-size: 13px;
-}
-
-.spot-description {
+  font-size: 16px;
 }
 </style>

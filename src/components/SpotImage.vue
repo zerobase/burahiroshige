@@ -9,21 +9,6 @@
           <small v-if="image.credit">(Credit: {{ image.credit }})</small>
       </figcaption>
     </figure>
-    <!--
-      <div id="viewer"></div>
-      <script>
-        tifyOptions = {
-          container: '#viewer',
-          immediateRender: false,
-          init: true,
-          language: 'de',
-          manifest: 'https://www.dl.ndl.go.jp/api/iiif/2558314/manifest.json',
-          stylesheet: '../assets/my-very-own-tify-styles.css',
-          title: null,
-        }
-      </script>
-      <script src="../assets/tify.js"></script>
-    -->
   </div>
 </template>
 
