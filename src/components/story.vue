@@ -3,10 +3,10 @@
     <h1 class="story-title">{{ story.title }}</h1>
     <b-tabs content-class="mt-3">
       <b-tab title="テキスト" active>
-        <story-text v-bind:story=story v-bind:spots=spots></story-text>
+        <StoryText v-bind:story=story v-bind:spots=spots></StoryText>
       </b-tab>
       <b-tab title="マップ">
-        <story-map v-bind:spots=spots></story-map>
+        <StoryMap v-bind:spots=spots></StoryMap>
       </b-tab>
     </b-tabs>
   </main>
@@ -16,7 +16,14 @@
 import dataset from '../dataset'
 import _ from 'lodash'
 
+import StoryText from '@/components/StoryText'
+import StoryMap from '@/components/StoryMap'
+
 export default {
+  components: {
+    StoryText,
+    StoryMap
+  },
   data () {
     var storyID = this.$route.params.id
     var story = dataset.stories[storyID]
