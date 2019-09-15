@@ -1,12 +1,11 @@
 <template>
   <main>
-    <h1 class="story-title">{{ story.title }}</h1>
     <b-tabs content-class="mt-3">
       <b-tab title="テキスト" active>
         <StoryText v-bind:story=story v-bind:spots=spots></StoryText>
       </b-tab>
       <b-tab title="マップ">
-        <StoryMap v-bind:spots=spots></StoryMap>
+        <StoryMap v-bind:story=story v-bind:spots=spots></StoryMap>
       </b-tab>
     </b-tabs>
   </main>
@@ -39,10 +38,5 @@ export default {
 <style scoped>
 main {
   margin: 10px;
-}
-
-.story-title {
-  font-size: 24px;
-  margin: 10px 0;
 }
 </style>

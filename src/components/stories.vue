@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p class="lead-text">古地図を見ながら街歩き。足で読む歴史。</p>
     <ul class="story-list">
       <li class="story-list-item" v-for="story in stories" v-bind:key="story.id">
         <router-link class="story-link" v-bind:to="{ name : 'story', params : { id: story.id }}">
@@ -24,6 +25,10 @@ export default {
 </script>
 
 <style scoped>
+.lead-text {
+  margin: 15px;
+}
+
 .story-list {
   padding-left: 0;
   display: flex;

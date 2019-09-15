@@ -1,5 +1,6 @@
 <template>
   <div class="story-text-content">
+    <h1 class="story-title">{{ story.title }}</h1>
     <figure class="story-figure">
       <b-img class="story-figure-image" v-bind:src=story.image fluid alt="カバーアート画像"></b-img>
       <figcaption class="story-figure-caption">{{ story.imageCaption }} <small>(Credit: {{ story.imageCredit }})</small></figcaption>
@@ -27,6 +28,11 @@ export default {
 </script>
 
 <style scoped>
+.story-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
 .story-figure-image {
   margin: 10px 0;
   height: 200px;
