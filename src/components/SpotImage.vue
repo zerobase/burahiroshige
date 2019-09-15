@@ -32,3 +32,18 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.spot-figure-image {
+  margin: 30px 0;
+}
+
+.spot-content.collection .spot-figure-image {
+  object-fit: contain;
+  max-height: 70vh;
+}
+
+.spot-figure-caption {
+  color: #6c757d;
+}
+</style>

@@ -6,32 +6,27 @@ const _stories = {
     imageCaption: '「東海道五十三次之内 日本橋」歌川広重筆。明六ツに日本橋を渡る大名行列',
     imageCredit: 'Hiroshige [Public domain]',
     description: 'ビジネスと商業の中心地、交通の中心地として栄える日本橋、江戸時代は東海道の起点としてまさに江戸の商都としての顔を見せる場所でした。今日は豊かな町娘の気分になって、1日日本橋界隈で散財をしてみましょう。'
-  }/*,
-  2: {
-    id: 2,
-    title: '品川ゲートウェイシティ',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Takanawa_Gateway_Station_201905a.jpg/800px-Takanawa_Gateway_Station_201905a.jpg',
-    imageCaption: '高輪ゲートウェイ駅建設状況（2019年5月16日撮影）',
-    imageCredit: '江戸村のとくぞう [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)]',
-    description: '元々は、目黒川の下流から河口付近一帯の地域を指して品川と言った。近代になって、品川駅がこれよりかなり北側に開業したため、現在の品川の心象的地理は、港区の駅周辺を含めた地域まで拡大している。品川の名前の由来は、目黒川の別名であるとする説、高輪に対して品ヶ輪とした説など様々あり、はっきりとしたことはよく分からない。(Wikipedia)'
-  }*/
+  }
 }
 
+/**
+ * spots: {
+ *   #: {
+ *     storyID: #,
+ *     id: #,
+ *     title: '',
+ *     lead: '',
+ *     description: '',
+ *     position: [#.#, #.#],
+ *     image: {
+ *       type: 'raw', // raw, iiif
+ *       url: 'https://'
+ *     }
+ *   }
+ * }
+ */
+
 const _spots = {
-  /*
-  #: {
-    storyID: 1,
-    id: #,
-    title: '',
-    lead: '',
-    description: '',
-    position: [47.413220, -1.219482],
-    image: {
-      type: 'raw', // raw, iiif
-      url: 'https://'
-    }
-  },
-  */
   1: {
     storyID: 1,
     id: 1,
@@ -56,6 +51,7 @@ const _spots = {
     title: '魚河岸',
     lead: '魚河岸で売られている魚',
     description: '｢魚河岸といえば魚よね｣｢魚かぁ…今の季節ならうなぎとか？｣｢昨日の夕餉、うなぎだったわね｣｢うらやましいー昨日の夕餉は鯉よ｣｢鯉もおいしいじゃない｣',
+    position: [35.684393, 139.774932],
     image: {
       type: 'raw', // raw, iiif
       url: 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Yoshitoshi_The_Giant_Carp.jpg'
@@ -67,6 +63,7 @@ const _spots = {
     title: '越後屋',
     lead: 'かんざし',
     description: '｢越後屋による前に新しいかんざしがほしいから見ていっていきたいのよね｣｢いいわよ、時間まだあるし｣ ｢このかんざし、べっこうでかわいい｣｢値段もそんなに高くないし買っちゃえば？｣｢こっちのも漆でかわいい、こっちも…うーん…どっちがいいと思う？｣｢漆かなぁ｣｢じゃあこれください｣',
+    position: [35.686433, 139.773888],
     image: {
       type: 'raw', // raw, iiif
       url: 'https://colbase.nich.go.jp/uploads/collection_item_images/thumbnail/0d47a54bc0dbfead39b888bccf3c779d.jpg'
