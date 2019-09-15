@@ -36,6 +36,8 @@ export default {
 <style scoped>
 .spot-figure-image {
   margin: 30px 0;
+  object-fit: contain;
+  max-height: 200vh;
 }
 
 .spot-content.collection .spot-figure-image {
