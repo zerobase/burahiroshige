@@ -26,7 +26,7 @@ export default {
 }
 .map-iframe {
   width: 100%;
-  height: 60vh;
-  margin-bottom: 50px;
+  height: 80vh;
+  margin-bottom: 200px;
 }
 </style>
