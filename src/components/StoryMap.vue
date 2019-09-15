@@ -1,39 +1,14 @@
 <template>
-  <div class="story-map-content" style="height: 100%; width: 100%">
+  <div class="story-map-content">
     <l-map
       v-if="showMap"
       :zoom="zoom"
       :center="center"
       :options="mapOptions"
-      style="height: 100%"
       @update:center="centerUpdate"
       @update:zoom="zoomUpdate"
     >
       <l-tile-layer :url="url" :attribution="attribution" />
-      <l-marker :lat-lng="withPopup">
-        <l-popup>
-          <div @click="innerClick">
-            I am a popup
-            <p v-show="showParagraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              sed pretium nisl, ut sagittis sapien. Sed vel sollicitudin nisi.
-              Donec finibus semper metus id malesuada.
-            </p>
-          </div>
-        </l-popup>
-      </l-marker>
-      <l-marker :lat-lng="withTooltip">
-        <l-tooltip :options="{ permanent: true, interactive: true }">
-          <div @click="innerClick">
-            I am a tooltip
-            <p v-show="showParagraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              sed pretium nisl, ut sagittis sapien. Sed vel sollicitudin nisi.
-              Donec finibus semper metus id malesuada.
-            </p>
-          </div>
-        </l-tooltip>
-      </l-marker>
     </l-map>
   </div>
 </template>
@@ -58,11 +33,6 @@ export default {
       url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      withPopup: latLng(35.68395, 139.7744),
-      withTooltip: latLng(35.68395, 139.7744),
-      currentZoom: 11.5,
-      currentCenter: latLng(35.68395, 139.7744),
-      showParagraph: false,
       mapOptions: {
         zoomSnap: 0.5
       },
