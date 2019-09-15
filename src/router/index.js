@@ -5,12 +5,17 @@ import 'bootstrap/dist/css/bootstrap.css' // added
 import 'bootstrap-vue/dist/bootstrap-vue.css' // added
 import stories from '@/components/stories'
 import story from '@/components/story'
+import storyText from '@/components/story-text'
+import storyMap from '@/components/story-map'
 import spot from '@/components/spot'
 import { ImagePlugin, TabsPlugin } from 'bootstrap-vue'
 
 Vue.use(Router)
 Vue.use(ImagePlugin)
 Vue.use(TabsPlugin)
+
+Vue.component('story-text', storyText)
+Vue.component('story-map', storyMap)
 
 export default new Router({
   routes: [
