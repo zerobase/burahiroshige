@@ -1,24 +1,26 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <myheader></myheader>
     <router-view/>
-    <button class="btn btn-primary">test</button>
   </div>
 </template>
 
 <script>
+import myheader from './components/myheader'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    myheader
+  }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
