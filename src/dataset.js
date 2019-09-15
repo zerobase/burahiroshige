@@ -1,7 +1,7 @@
 const _stories = {
   1: {
     id: 1,
-    title: '日本橋で散財三昧！お江戸日本橋を遊びつくす',
+    title: '日本橋で豪遊ザンマイ！お江戸日本橋を遊びつくす',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Hiroshige_le_pont_Nihonbashi_%C3%A0_l%27aube.jpg/640px-Hiroshige_le_pont_Nihonbashi_%C3%A0_l%27aube.jpg',
     imageCaption: '「東海道五十三次之内 日本橋」歌川広重筆。明六ツに日本橋を渡る大名行列',
     imageCredit: 'Hiroshige [Public domain]',
@@ -25,7 +25,7 @@ const _spots = {
     title: '',
     lead: '',
     description: '',
-    location: [47.413220, -1.219482],
+    position: [47.413220, -1.219482],
     image: {
       type: 'raw', // raw, iiif
       url: 'https://'
@@ -44,6 +44,7 @@ const _spots = {
     title: '魚河岸',
     lead: '魚河岸を出入りする魚河岸衆',
     description: '｢ふみ、今日は１日遊び倒すわよ｣｢まずはどこへいくの？｣｢五ツ半刻だからまだ越後屋もあいてない時間よね｣｢うーん、すぐ近くだから魚河岸見に行かない？｣｢いいわね！｣｢ほら、あそこに魚河岸から出てきた振り売りがいるわよ｣｢見てあの脚、かっこいいーあんな人と付き合えたらなぁ｣｢私は火消しのが好きかなぁ｣｢えー魚河岸衆のがかっこいいでしょ｣',
+    position: [35.687443, 139.773451],
     image: {
       type: 'raw', // raw, iiif
       url: 'https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/kunitachi/80/80-1461.jpg'
