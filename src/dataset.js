@@ -18,15 +18,24 @@ const _stories = {
 }
 
 const _spots = {
+  /*
+  #: {
+    storyID: 1,
+    id: #,
+    title: '',
+    lead: '',
+    description: '',
+    location: [47.413220, -1.219482],
+    image: {
+      type: 'raw', // raw, iiif
+      url: 'https://'
+    }
+  },
+  */
   1: {
     storyID: 1,
     id: 1,
     title: 'イントロ',
-    lead: '',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
     description: '日本橋は越後屋や白木屋をはじめとした商いの街として有名でした。江戸に住む町娘、おたきとふみの仲良し二人組が日本橋で過ごす１日を覗いてみましょう。'
   },
   2: {
@@ -34,11 +43,11 @@ const _spots = {
     id: 2,
     title: '魚河岸',
     lead: '魚河岸を出入りする魚河岸衆',
-    image: '',
-    imageCaption: '',
-    imageCredit: '',
-    location: null,
-    description: '｢ふみ、今日は１日遊び倒すわよ｣｢まずはどこへいくの？｣｢五ツ半刻だからまだ越後屋もあいてない時間よね｣｢うーん、すぐ近くだから魚河岸見に行かない？｣｢いいわね！｣｢ほら、あそこに魚河岸から出てきた振り売りがいるわよ｣｢見てあの脚、かっこいいーあんな人と付き合えたらなぁ｣｢私は火消しのが好きかなぁ｣｢えー魚河岸衆のがかっこいいでしょ｣'
+    description: '｢ふみ、今日は１日遊び倒すわよ｣｢まずはどこへいくの？｣｢五ツ半刻だからまだ越後屋もあいてない時間よね｣｢うーん、すぐ近くだから魚河岸見に行かない？｣｢いいわね！｣｢ほら、あそこに魚河岸から出てきた振り売りがいるわよ｣｢見てあの脚、かっこいいーあんな人と付き合えたらなぁ｣｢私は火消しのが好きかなぁ｣｢えー魚河岸衆のがかっこいいでしょ｣',
+    image: {
+      type: 'raw', // raw, iiif
+      url: 'https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/kunitachi/80/80-1461.jpg'
+    }
   },
   3: {
     storyID: 1,

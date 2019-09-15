@@ -9,18 +9,20 @@
     <ul class="spot-list">
       <li class="spot-list-item" v-for="spot in spots" v-bind:key="spot.id">
         <router-link v-bind:to="{ name : 'spot', params : { id: spot.id }}">
-          <b-img v-if="spot.image" class="spot-thumbnail" thumbnail v-bind:src=spot.image alt=""></b-img>
-          <p class="spot-title">{{ spot.title }}</p>
-          <p class="spot-lead">{{ spot.lead }}</p>
+          <SpotContent v-bind:spot=spot></SpotContent>
         </router-link>
-        <p class="spot-description">{{ spot.description }}</p>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import SpotContent from '@/components/SpotContent'
+
 export default {
+  components: {
+    SpotContent
+  },
   props: {
     'story': Object,
     'spots': Array

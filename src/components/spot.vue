@@ -1,20 +1,18 @@
 <template>
   <main>
     <nav class="spot-story-title"><router-link v-bind:to="{ name : 'story', params : { id: story.id }}">{{ story.title }}</router-link></nav>
-    <h1 class="spot-title">{{ spot.title }}</h1>
-    <p class="spot-lead">{{ spot.lead }}</p>
-    <figure class="spot-figure" v-if="spot.image">
-      <b-img class="spot-figure-image" v-bind:src=spot.image fluid alt="スポット画像"></b-img>
-      <figcaption class="spot-figure-caption">{{ spot.imageCaption }} <small>(Credit: {{ spot.imageCredit }})</small></figcaption>
-    </figure>
-    <p class="spot-description">{{ spot.description }}</p>
+    <SpotContent v-bind:spot=spot></SpotContent>
   </main>
 </template>
 
 <script>
 import dataset from '../dataset'
+import SpotContent from '@/components/SpotContent'
 
 export default {
+  components: {
+    SpotContent
+  },
   data () {
     var spot = dataset.spots[this.$route.params.id]
     return {
